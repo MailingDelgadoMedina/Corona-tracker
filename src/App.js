@@ -82,7 +82,7 @@ import "leaflet/dist/leaflet.css";
                 <h1>covaid 19 Tracker</h1>
                     <FormControl  className= "app_dropdown">
                       <Select variant="outlined" onChange={onCountryChange} value={country}>
-                    <MenuItem value="wroldwide"> wroldwide</MenuItem>
+                    <MenuItem value="wroldwide"> World Wide</MenuItem>
             {/* loop through all the countries */}
 
             {
@@ -124,7 +124,7 @@ import "leaflet/dist/leaflet.css";
               <Table countries={TableData}/>
 
               <h3>
-                WroldWide New Cases
+                World Wide New Cases
 
 
                 <LineGraph/>
