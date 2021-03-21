@@ -16,7 +16,7 @@ import Map from "./Map";
 import "leaflet/dist/leaflet.css";
 
   const App = () => {
-    const [country, setInputCountry] = useState("wroldwide");
+    const [country, setInputCountry] = useState("World Wide");
     const [countryInfo, setCountryInfo] = useState({});
     const [countries, setCountries] = useState([]);
     const [mapCountries, setMapCountries] = useState([]);
@@ -58,7 +58,7 @@ import "leaflet/dist/leaflet.css";
       const countryCode = e.target.value;
   
       const url =
-        countryCode === "worldwide"
+        countryCode === "World Wide"
           ? "https://disease.sh/v3/covid-19/all"
           : `https://disease.sh/v3/covid-19/countries/${countryCode}`;
       await fetch(url)
@@ -82,7 +82,7 @@ import "leaflet/dist/leaflet.css";
                 <h1>covaid 19 Tracker</h1>
                     <FormControl  className= "app_dropdown">
                       <Select variant="outlined" onChange={onCountryChange} value={country}>
-                    <MenuItem value="wroldwide"> World Wide</MenuItem>
+                    <MenuItem value="World Wide"> World Wide</MenuItem>
             {/* loop through all the countries */}
 
             {
